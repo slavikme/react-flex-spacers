@@ -1,0 +1,80 @@
+{
+  "name": "react-flex-spacers",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
+    "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore --fix",
+    "build": "tsc && vite build",
+    "test": "vitest run",
+    "test-watch": "vitest",
+    "test:ui": "vitest --ui",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slavikme/react-flex-spacers.git"
+  },
+  "keywords": [
+    "spacer",
+    "flex",
+    "react",
+    "typescript",
+    "storybook"
+  ],
+  "author": "Slavik Meltser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slavikme/react-flex-spacers/issues"
+  },
+  "homepage": "https://github.com/slavikme/react-flex-spacers#readme",
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.9.0",
+    "@storybook/addon-essentials": "^8.2.9",
+    "@storybook/addon-interactions": "^8.2.9",
+    "@storybook/addon-links": "^8.2.9",
+    "@storybook/addon-onboarding": "^8.2.9",
+    "@storybook/blocks": "^8.2.9",
+    "@storybook/react": "^8.2.9",
+    "@storybook/react-vite": "^8.2.9",
+    "@storybook/test": "^8.2.9",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@types/lodash": "^4.17.7",
+    "@types/react": "^18.3.5",
+    "@typescript-eslint/eslint-plugin": "^8.5.0",
+    "@typescript-eslint/parser": "^8.5.0",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.35.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-storybook": "^0.8.0",
+    "jsdom": "^25.0.0",
+    "lodash": "^4.17.21",
+    "prettier": "^3.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "storybook": "^8.2.9",
+    "styled-components": "^6.1.13",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.4",
+    "vite-plugin-dts": "^4.2.1",
+    "vitest": "^2.0.5"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1"
+  },
+  "dependencies": {
+    "antd": "^5.20.6"
+  }
+}
